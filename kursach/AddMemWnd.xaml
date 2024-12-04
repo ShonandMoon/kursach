@@ -1,0 +1,19 @@
+﻿<Window x:Class="kursach.AddMemWnd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursach"
+        mc:Ignorable="d"
+        Title="AddMemWnd" Height="350" Width="450">
+    <Grid>
+        <Button x:Name="OpenFD" Content="open file" HorizontalAlignment="Left" Height="26" Margin="326,34,0,0" VerticalAlignment="Top" Width="100" Click="OpenFD_Click"/>
+        <Button x:Name="AddNewMem" Content="Add mem" HorizontalAlignment="Left" Height="62" Margin="320,262,0,0" VerticalAlignment="Top" Width="106" Background="#FFBAD7A3" Click="AddNewMem_Click"/>
+        <TextBox x:Name="CtgrNameTXT" HorizontalAlignment="Center" Height="36" Margin="0,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="394"/>
+        <TextBox x:Name="MemNameTXT" HorizontalAlignment="Center" Height="39" Margin="0,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393"/>
+        <TextBlock x:Name="MemPathTXT" HorizontalAlignment="Left" Height="74" Margin="33,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288"/>
+        <Label Content="Category name" HorizontalAlignment="Left" Height="29" Margin="28,102,0,0" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Mem Name" HorizontalAlignment="Left" Height="28" Margin="28,172,0,0" VerticalAlignment="Top" Width="149"/>
+
+    </Grid>
+</Window>

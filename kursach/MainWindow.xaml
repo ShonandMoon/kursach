@@ -1,0 +1,20 @@
+﻿<Window x:Class="kursach.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursach"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="MemList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,65,533,119" SelectionChanged="MemList_SelectionChanged"/>
+        <Image x:Name="MemeIMG" HorizontalAlignment="Left" Height="404" Margin="295,10,0,0" VerticalAlignment="Top" Width="484"/>
+        <Button x:Name="AddButton" Content="Add mem" HorizontalAlignment="Left" Height="31" Margin="10,320,0,0" VerticalAlignment="Top" Width="113" Background="#FFC7E6BB" Click="AddButton_Click"/>
+        <ComboBox x:Name="CtgrList" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="257" SelectionChanged="CtgrList_SelectionChanged"/>
+        <TextBox x:Name="Poisk" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="257" Height="23" TextChanged="Poisk_TextChanged"/>
+        <Button x:Name="DeleteButton" Content="Del meme" HorizontalAlignment="Left" Margin="154,320,0,0" VerticalAlignment="Top" Height="31" Width="113" Background="#FFE0B3AE" Click="DeleteButton_Click"/>
+        <Button x:Name="SaveFileBttn" Content="Save file" HorizontalAlignment="Left" Height="30" Margin="10,372,0,0" VerticalAlignment="Top" Width="113" Background="#FF8AAF91" Click="SaveFileBttn_Click"/>
+        <Button x:Name="DownldFile" Content="DownLoad" HorizontalAlignment="Left" Height="30" Margin="154,372,0,0" VerticalAlignment="Top" Width="113" Background="#FFC96D6D" Click="DownldFile_Click"/>
+
+    </Grid>
+</Window>
